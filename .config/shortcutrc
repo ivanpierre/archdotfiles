@@ -1,0 +1,34 @@
+# vim: filetype=sh
+
+# Goto main directories
+alias A="cd ~/Audio && ls -a"
+alias C="cd ~/.config && ls -a"
+alias D="cd ~/Downloads && ls -a"
+alias G="cd ~/Git && ls -a"
+alias I="cd ~/Images && ls -a"
+alias M="cd /mnt && ls -a"
+alias O="cd ~/Office && ls -a"
+alias R="cd ~/ && ls -a"
+alias S="cd ~/.scripts && ls -a"
+alias V="cd ~/Videos && ls -a"
+
+# Edit config files
+alias Ebf="$EDITOR ~/.config/bmfiles"
+alias Ebd="$EDITOR ~/.config/bmdirs"
+alias Eb="$EDITOR ~/.bashrc"
+alias Ea="$EDITOR ~/.config/aliasrc"
+alias Ez="$EDITOR ~/.zshrc"
+alias Ev="$EDITOR ~/.config/nvim/init.vim"
+alias Ei3="$EDITOR ~/.config/i3/config"
+alias Eib="$EDITOR ~/.config/i3blocks/config"
+alias Em="$EDITOR ~/.config/mutt/muttrc"
+alias Exd="$EDITOR ~/.Xdefaults"
+alias Enu="$EDITOR ~/.config/newsboat/urls"
+alias Enc="$EDITOR ~/.config/newsboat/config"
+alias Emb="$EDITOR ~/.config/ncmpcpp/bindings"
+alias Emc="$EDITOR ~/.config/ncmpcpp/config"
+
+# edit main documents
+alias eb="$EDITOR ~/Office/LaTeX/uni.bib"
+alias cv="$EDITOR ~/Office/LaTeX/cv.tex"
+alias er="$EDITOR ~/Office/referbib"

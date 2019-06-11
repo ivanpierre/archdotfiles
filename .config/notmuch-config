@@ -1,0 +1,14 @@
+[database]
+path=/home/ivan/.local/share/mail
+[user]
+name=Ivan Pierre (world)
+primary_email=me@ivanpierre.world
+[new]
+tags=unread;inbox;
+ignore=
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg
