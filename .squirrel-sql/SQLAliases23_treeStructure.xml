@@ -1,0 +1,10 @@
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.AliasFolderState">
+        <aliasIdentifier/>
+        <colorRGB>-1</colorRGB>
+        <expanded>false</expanded>
+        <folderName>AliasRootNode</folderName>
+        <kids Indexed="true"/>
+        <selected>false</selected>
+    </Bean>
+</Beans>

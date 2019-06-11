@@ -1,0 +1,42 @@
+cd
+DEST="/home/ivan/Git/archdotfiles"
+find \
+	-mindepth 1 \
+	-type f \
+	! -wholename './.m2*' \
+	! -wholename './Git/*' \
+	! -wholename './Downloads/*' \
+	! -wholename './Audio/*' \
+	! -wholename './Books/*' \
+	! -wholename './Images/*' \
+	! -wholename './Mail/*' \
+	! -wholename './Music/*' \
+	! -wholename './Office/*' \
+	! -wholename './Projects/*' \
+	! -wholename './Video/*' \
+	! -wholename './multisysinstall*' \
+	! -wholename './bin/*' \
+	! -wholename './srv/*' \
+	! -wholename './tmp/*' \
+	! -wholename './.cache/*' \
+	! -wholename './.config/chromium/*' \
+	! -wholename './.config/Code*' \
+	! -wholename './.config/nvim/bundle/*' \
+	! -wholename './.emacs.d*' \
+	! -wholename './.git*' \
+	! -wholename './.gnupg*' \
+	! -wholename './.jabba*' \
+	! -wholename './.rustup*' \
+	! -wholename './.cargo*' \
+	! -wholename './.local*' \
+	! -wholename './.mozilla*' \
+	! -wholename './.oh-my-zsh*' \
+	! -wholename './.ssh*' \
+	! -wholename './.surf/cache*' \
+	! -wholename './.thunderbird*' \
+	! -wholename './.vscode*' \
+	| while read file
+	do
+		mkdir -vp $(dirname $DEST/$file)
+		cp -v $file $DEST/$file
+	done

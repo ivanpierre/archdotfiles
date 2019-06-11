@@ -1,0 +1,28 @@
+
+
+
+
+IMAPStore ipg-remote
+Host imap.gmail.com
+Port  993
+User kilroysoft@gmail.com
+PassCmd "pass mutt-wizard-ipg"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore ipg-local
+Subfolders Verbatim
+Path ~/.local/share/mail/ipg/
+Inbox ~/.local/share/mail/ipg/INBOX
+Flatten .
+
+Channel ipg
+Expunge Both
+Master :ipg-remote:
+Slave :ipg-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+# End profile
+

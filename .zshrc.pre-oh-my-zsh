@@ -1,0 +1,2 @@
+
+[ -s "/home/ivan/.jabba/jabba.sh" ] && source "/home/ivan/.jabba/jabba.sh"
