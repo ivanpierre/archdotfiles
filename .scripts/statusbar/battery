@@ -11,7 +11,7 @@ case $BLOCK_BUTTON in
 - Text color reflects charge left" ;;
 esac
 
-capacity=$(cat /sys/class/power_supply/"$1"/capacity) || exit
+capacity=$(cat /sys/class/power_supply/"$1"/capacity) || exit 0
 status=$(cat /sys/class/power_supply/"$1"/status)
 
 if [ "$capacity" -ge 75 ]; then
