@@ -38,8 +38,8 @@ for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
 
 # #---Starting sxhkd Scripts---# #
-#exec_always --no-startup-id sudo -A systemctl stop sxhkd.service >> ~/error.log 2>> ~/error.log
-#exec_always --no-startup-id sudo -A systemctl start sxhkd.service >> ~/error.log 2>> ~/error.log
+# exec_always --no-startup-id sudo -A systemctl reload --user sxhkd.service >> ~/error.log 2>> ~/error.log
+# exec_always --no-startup-id sudo -A systemctl start sxhkd.service >> ~/error.log 2>> ~/error.log
 
 # #---Starting External Scripts---# #
 # mpd startup

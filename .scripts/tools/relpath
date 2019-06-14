@@ -1,0 +1,16 @@
+#! /bin/bash
+# Calculate relative path from A to B, returns true on success
+# Example: ln -s "$(relpath "$A" "$B")" "$B"
+# We can create dangling softlinks
+X="$(readlink -m -- "$1")" || return
+Y="$(readlink -m -- "$2")" || return
+X="${X%/}/"
+A=""
+while   Y="${Y%/*}"
+        [ ".${X#"$Y"/}" = ".$X" ]
+do
+        A="../$A"
+done
+X="$A${X#"$Y"/}"
+X="${X%/}"
+echo "${X:-.}"

@@ -1336,3 +1336,233 @@ ll
 ll
 cat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transcat transaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 Ei3
+S
+cd tools
+ll
+e saveuserroot 
+./saveuserroot 
+e saveuserroot 
+./saveuserroot 
+G
+ll
+cd archdotfiles/
+ll
+man find
+ll
+cd ..
+rm -rf archdotfiles
+git clone https://github.com/ivanpierre/archdotfiles
+git clone https://github.com/ivanpierre/archdotfiles
+cd arch
+cd archdotfiles/
+ls
+ll
+ls
+ls
+ll
+ls
+ll
+cd ..
+rm -rf archdotfiles/
+git clone https://github.com/ivanpierre/archdotfiles
+cd archdotfiles/
+ll
+ll
+cd .password-store/
+ll
+cd .config
+..
+cd .config
+ll
+cd filezilla/
+ll
+git status
+..
+..
+git status
+git add *
+git status
+git add .??*
+git status
+git commit -m "init"
+git push
+Ei3
+ S
+cd tools
+ll
+e saveuserroot 
+./saveuserroot
+cd
+ll
+man mkdir
+man cp
+S
+xs tools
+ll
+cd tools
+ll
+ saveuserroot 
+.saveuserroot 
+./saveuserroot 
+e saveuserroot 
+./saveuserroot 
+ls
+cd
+ll
+nano
+nemo
+G
+cd tools
+S
+cd tools
+ll
+e saveuserroot 
+./saveuserroot 
+e saveuserroot 
+./saveuserroot 
+e saveuserroot 
+e saveuserroot 
+pacman -Qqn | pacman -S -
+sudo pacman -Qqn | pacman -S -
+pacman -Qqn | pacman -S -
+pacman -Qqn | sudo pacman -S -
+ll
+sxhkd &
+Ei3
+cd .config
+ll
+max systemctl
+manj systemctl
+man systemctl
+systemctl is-system-running sxhkd
+systemctl is-system-running
+systemctl stop sxhkd
+systemctl start --user sxhkd
+systemctl start --user sxhkd.service
+systemctl start --system sxhkd.service
+cd .config
+ll
+cd sxhkd
+ls
+..
+cd autostart
+ll
+..
+ll
+which sxhkd
+systemctl --user disable sxhkd
+systemctl --user enable sxhkd
+ll
+mkdir systemd
+cd systemd/
+ll
+mkdir user
+cd user
+e sxhkd.service
+systemctl --user enable sxhkd
+cd
+ll
+e xinitrc
+e .xinitrc
+Ei3
+suso systemctl --user reload sxhkd
+sudo systemctl --user reload sxhkd
+sudo systemctl reload --user sxhkd
+systemctl reload --user sxhkd
+systemctl enable --user sxhkd
+systemctl start --user sxhkd
+systemctl reload --user sxhkd
+systemctl reload sxhkd
+systemctl status --user sxhkd
+sudo systemctl start sxhkd
+systemctl status --user sxhkd
+man sxhkd
+systemctl status --user sxhkd
+systemctl start --user sxhkd
+C
+cd systemd
+cd user
+ll
+cd graphical.target.wants/
+ll
+..
+ll
+rm -rf graphical.target.wants/
+ll
+e sxhkd.service 
+systemctl start --user sxhkd
+systemctl disable --user sxhkd
+systemctl stop --user sxhkd
+systemctl enable --user sxhkd
+C
+cd systemd
+cd user
+ll
+e sxhkd.service 
+systemctl status --user sxhkd
+Ei3
+ll
+cd log
+ll
+less error.log
+..
+less error.log
+Ei3
+systemctl status --user sxhkd
+systemctl enable --user sxhkd
+systemctl status --user sxhkd
+ll
+e3 .xinitrc
+e .xinitrc
+rm error.log
+ll
+less .xsession-error
+less .xsession-errors
+e .xinitrc 
+less .xsession-errors
+which block_reap
+which block-reap
+man block_reap
+which i3blocks
+cd /usr
+cd libexec
+ls
+i3blocks
+ll
+cd
+ll
+less .xsession-errors
+C
+Ei3b
+cd i3blocks/
+ll
+e config
+battery
+battery BAT0
+cd sys
+cd /sys
+cd class
+ll
+cd power_supply/
+ll
+..
+cd powercap/
+ll
+systemctl status acpid
+acpid
+C
+cd i3blocks/
+ll
+e config
+which battery
+S
+cd statusbar
+ll
+e battery
+cd
+ls
+ll
+less .xsession-errors
+rm .xsession-errors
+ll
+ll
