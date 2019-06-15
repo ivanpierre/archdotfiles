@@ -71,3 +71,5 @@ WARNING: No icon found in path: 'dialog-information'
 [1892:1892:0614/033411.404815:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
 [1892:1892:0614/040255.303301:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
 [1892:1892:0614/042409.389924:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+WARNING: No icon found in path: 'dialog-information'
+WARNING: No icon found in path: 'dialog-information'

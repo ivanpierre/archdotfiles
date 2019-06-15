@@ -86,8 +86,13 @@ find \
 		cd
 		DIR=$(dirname $DEST/$file)
 		FILE=$(basename $DEST/$file)
-		LINK="$DEST/$(readlink $file)"
-		LINKDIR=$(realpath --relative-to="$DIR" "$LINK")
-		LINKFILE=$(basename $LINK)
-		echo "link : $DIR $FILE file : $LINK $LINKDIR $LINKFILE"
+		LINK="$(readlink $file)"
+		echo "realpath $(pwd) $LINK"
+		LINKDIR=$(realpath --relative-to="$(pwd)" "$(pwd)/$LINK")
+		echo "-> $LINKDIR"
+		cd $DEST/$(basedir $LINKDIR)
+		echo "realpath $DIR $DEST/$LINKDIR"
+		LINKDIR=$(realpath --relative-to="." $DEST/$LINKDIR)
+		echo "-> $LINKDIR"
+		echo "link : $DIR $FILE file : $LINK $LINKDIR"
 	done
