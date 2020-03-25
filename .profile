@@ -43,6 +43,9 @@ bash ~/.screenlayout/double.sh
 pgrep sxhkd
 
 # if no start the process(es)
-[ $? = 1 ] && sudo -A systemd start sxhkd
+# [ $? = 1 ] && sudo -A systemd start sxhkd
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export DENO_INSTALL="/home/ivan/.local"
+export PATH="$DENO_INSTALL/bin:$PATH"
+

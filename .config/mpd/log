@@ -501,3 +501,441 @@ Jun 13 08:00 : exception: RTIOThread could not get realtime scheduling, continui
 Jun 13 08:00 : client: [0] opened from 127.0.0.1:47938
 Jun 13 08:00 : client: [1] opened from 127.0.0.1:47942
 Jun 13 08:00 : client: [1] closed
+Jun 14 11:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 14 11:29 : client: [0] opened from 127.0.0.1:37108
+Jun 14 11:29 : client: [1] opened from 127.0.0.1:37112
+Jun 14 11:29 : client: [1] closed
+Jun 25 02:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 02:04 : client: [0] opened from 127.0.0.1:51500
+Jun 25 02:04 : client: [1] opened from 127.0.0.1:51504
+Jun 25 02:04 : client: [1] closed
+Jun 26 03:02 : client: [2] opened from 127.0.0.1:56928
+Jun 26 03:02 : client: [2] closed
+Jul 04 00:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 04 00:31 : client: [0] opened from 127.0.0.1:36012
+Jul 04 00:31 : client: [1] opened from 127.0.0.1:36016
+Jul 04 00:31 : client: [1] closed
+Jul 04 12:58 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 04 12:58 : client: [0] opened from 127.0.0.1:58392
+Jul 04 12:58 : client: [1] opened from 127.0.0.1:58396
+Jul 04 12:58 : client: [1] closed
+Jul 09 21:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 09 21:18 : client: [0] opened from 127.0.0.1:50038
+Jul 09 21:18 : client: [1] opened from 127.0.0.1:50042
+Jul 09 21:18 : client: [1] closed
+Jul 10 19:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 10 19:08 : client: [0] opened from 127.0.0.1:41624
+Jul 10 19:08 : client: [1] opened from 127.0.0.1:41628
+Jul 10 19:08 : client: [1] closed
+Jul 13 12:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 13 12:52 : client: [0] opened from 127.0.0.1:36136
+Jul 13 12:52 : client: [1] opened from 127.0.0.1:36140
+Jul 13 12:52 : client: [1] closed
+Jul 27 18:41 : client: [2] opened from 127.0.0.1:58114
+Jul 27 18:41 : client: [2] closed
+Jul 29 09:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 29 09:30 : client: [0] opened from 127.0.0.1:36852
+Jul 29 09:30 : client: [1] opened from 127.0.0.1:36856
+Jul 29 09:30 : client: [1] closed
+Jul 29 09:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 29 09:32 : client: [0] opened from 127.0.0.1:53060
+Jul 29 09:32 : client: [1] opened from 127.0.0.1:53064
+Jul 29 09:32 : client: [1] closed
+Aug 02 22:12 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 02 22:12 : client: [0] opened from 127.0.0.1:58254
+Aug 02 22:12 : client: [1] opened from 127.0.0.1:58258
+Aug 02 22:12 : client: [1] closed
+Aug 07 17:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 07 17:33 : client: [0] opened from 127.0.0.1:54828
+Aug 07 17:33 : client: [1] opened from 127.0.0.1:54832
+Aug 07 17:33 : client: [1] closed
+Aug 30 03:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 03:02 : client: [0] opened from 127.0.0.1:37876
+Aug 30 03:02 : client: [1] opened from 127.0.0.1:37880
+Aug 30 03:02 : client: [1] closed
+Sep 05 22:10 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 22:10 : client: [0] opened from 127.0.0.1:46170
+Sep 05 22:10 : client: [1] opened from 127.0.0.1:46174
+Sep 05 22:10 : client: [1] closed
+Sep 07 03:14 : client: [2] opened from 127.0.0.1:56448
+Sep 07 03:14 : client: [2] closed
+Sep 07 03:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 03:16 : client: [0] opened from 127.0.0.1:54972
+Sep 07 03:16 : client: [1] opened from 127.0.0.1:54976
+Sep 07 03:16 : client: [1] closed
+Sep 07 03:17 : client: [2] opened from 127.0.0.1:55000
+Sep 07 03:17 : client: [2] closed
+Sep 07 03:17 : client: [3] opened from 127.0.0.1:55004
+Sep 07 03:17 : client: [3] closed
+Sep 07 03:17 : client: [4] opened from 127.0.0.1:55008
+Sep 07 03:17 : client: [4] closed
+Sep 07 03:17 : client: [5] opened from 127.0.0.1:55014
+Sep 07 03:17 : client: [5] closed
+Sep 07 03:17 : client: [6] opened from 127.0.0.1:55018
+Sep 07 03:17 : client: [6] closed
+Sep 07 03:17 : client: [7] opened from 127.0.0.1:55022
+Sep 07 03:17 : client: [7] closed
+Sep 07 03:17 : client: [8] opened from 127.0.0.1:55026
+Sep 07 03:17 : client: [8] closed
+Sep 07 03:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 03:29 : client: [0] opened from 127.0.0.1:35684
+Sep 07 03:29 : client: [1] opened from 127.0.0.1:35688
+Sep 07 03:29 : client: [1] closed
+Sep 07 03:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 03:34 : client: [0] opened from 127.0.0.1:57600
+Sep 07 03:34 : client: [1] opened from 127.0.0.1:57604
+Sep 07 03:34 : client: [1] closed
+Sep 13 00:05 : client: [2] opened from 127.0.0.1:42704
+Sep 13 00:05 : client: [2] closed
+Sep 16 13:35 : client: [3] opened from 127.0.0.1:43854
+Sep 16 13:35 : client: [3] closed
+Sep 16 13:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 16 13:39 : client: [0] opened from 127.0.0.1:38102
+Sep 16 13:39 : client: [1] opened from 127.0.0.1:38106
+Sep 16 13:39 : client: [1] closed
+Sep 25 15:08 : client: [2] opened from 127.0.0.1:48212
+Sep 25 15:08 : client: [2] closed
+Sep 25 15:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 15:14 : client: [0] opened from 127.0.0.1:35276
+Sep 25 15:14 : client: [1] opened from 127.0.0.1:35280
+Sep 25 15:14 : client: [1] closed
+Oct 05 09:50 : client: [2] opened from 127.0.0.1:39750
+Oct 05 09:50 : client: [2] closed
+Oct 05 09:51 : client: [3] opened from 127.0.0.1:39770
+Oct 05 09:51 : client: [3] closed
+Oct 05 12:09 : client: [4] opened from 127.0.0.1:43604
+Oct 05 12:09 : client: [4] closed
+Oct 15 10:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 10:30 : client: [0] opened from 127.0.0.1:50448
+Oct 15 10:30 : client: [1] opened from 127.0.0.1:50452
+Oct 15 10:30 : client: [1] closed
+Oct 15 19:32 : client: [2] opened from 127.0.0.1:34672
+Oct 15 19:32 : client: [2] closed
+Oct 29 02:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 29 02:14 : client: [0] opened from 127.0.0.1:41036
+Oct 29 02:14 : client: [1] opened from 127.0.0.1:41040
+Oct 29 02:14 : client: [1] closed
+Nov 02 07:02 : client: [2] opened from 127.0.0.1:53762
+Nov 02 07:02 : client: [2] closed
+Nov 06 00:08 : client: [3] opened from 127.0.0.1:39844
+Nov 06 00:08 : client: [3] closed
+Nov 06 00:08 : client: [4] opened from 127.0.0.1:39848
+Nov 06 00:08 : client: [4] closed
+Nov 06 00:08 : client: [5] opened from 127.0.0.1:39852
+Nov 06 00:08 : client: [5] closed
+Nov 06 00:08 : client: [6] opened from 127.0.0.1:39856
+Nov 06 00:08 : client: [6] closed
+Nov 06 00:08 : client: [7] opened from 127.0.0.1:39860
+Nov 06 00:08 : client: [7] closed
+Nov 06 00:08 : client: [8] opened from 127.0.0.1:39864
+Nov 06 00:08 : client: [8] closed
+Nov 06 00:08 : client: [9] opened from 127.0.0.1:39868
+Nov 06 00:08 : client: [9] closed
+Nov 06 00:08 : client: [10] opened from 127.0.0.1:39872
+Nov 06 00:08 : client: [10] closed
+Nov 06 00:08 : client: [11] opened from 127.0.0.1:39876
+Nov 06 00:08 : client: [11] closed
+Nov 06 00:08 : client: [12] opened from 127.0.0.1:39880
+Nov 06 00:08 : client: [12] closed
+Nov 06 00:08 : client: [13] opened from 127.0.0.1:39884
+Nov 06 00:08 : client: [13] closed
+Nov 06 00:08 : client: [14] opened from 127.0.0.1:39888
+Nov 06 00:08 : client: [14] closed
+Nov 06 00:08 : client: [15] opened from 127.0.0.1:39892
+Nov 06 00:08 : client: [15] closed
+Nov 06 00:08 : client: [16] opened from 127.0.0.1:39896
+Nov 06 00:08 : client: [16] closed
+Nov 06 00:08 : client: [17] opened from 127.0.0.1:39900
+Nov 06 00:08 : client: [17] closed
+Nov 06 00:08 : client: [18] opened from 127.0.0.1:39904
+Nov 06 00:08 : client: [18] closed
+Nov 06 00:08 : client: [19] opened from 127.0.0.1:39908
+Nov 06 00:08 : client: [19] closed
+Nov 06 00:08 : client: [20] opened from 127.0.0.1:39912
+Nov 06 00:08 : client: [20] closed
+Nov 06 00:08 : client: [21] opened from 127.0.0.1:39916
+Nov 06 00:08 : client: [21] closed
+Nov 06 00:08 : client: [22] opened from 127.0.0.1:39920
+Nov 06 00:08 : client: [22] closed
+Nov 06 00:08 : client: [23] opened from 127.0.0.1:39924
+Nov 06 00:08 : client: [23] closed
+Nov 06 00:08 : client: [24] opened from 127.0.0.1:39928
+Nov 06 00:08 : client: [24] closed
+Nov 06 00:08 : client: [25] opened from 127.0.0.1:39932
+Nov 06 00:08 : client: [25] closed
+Nov 06 00:08 : client: [26] opened from 127.0.0.1:39936
+Nov 06 00:08 : client: [26] closed
+Nov 06 00:08 : client: [27] opened from 127.0.0.1:39940
+Nov 06 00:08 : client: [27] closed
+Nov 06 00:08 : client: [28] opened from 127.0.0.1:39944
+Nov 06 00:08 : client: [28] closed
+Nov 06 00:08 : client: [29] opened from 127.0.0.1:39948
+Nov 06 00:08 : client: [29] closed
+Nov 06 00:08 : client: [30] opened from 127.0.0.1:39952
+Nov 06 00:08 : client: [30] closed
+Nov 06 00:08 : client: [31] opened from 127.0.0.1:39956
+Nov 06 00:08 : client: [31] closed
+Nov 06 00:08 : client: [32] opened from 127.0.0.1:39960
+Nov 06 00:08 : client: [32] closed
+Nov 06 00:08 : client: [33] opened from 127.0.0.1:39964
+Nov 06 00:08 : client: [33] closed
+Nov 06 00:08 : client: [34] opened from 127.0.0.1:39968
+Nov 06 00:08 : client: [34] closed
+Nov 06 00:08 : client: [35] opened from 127.0.0.1:39972
+Nov 06 00:08 : client: [35] closed
+Nov 06 00:08 : client: [36] opened from 127.0.0.1:39976
+Nov 06 00:08 : client: [36] closed
+Nov 06 00:08 : client: [37] opened from 127.0.0.1:39980
+Nov 06 00:08 : client: [37] closed
+Nov 06 00:08 : client: [38] opened from 127.0.0.1:39984
+Nov 06 00:08 : client: [38] closed
+Nov 06 00:08 : client: [39] opened from 127.0.0.1:39988
+Nov 06 00:08 : client: [39] closed
+Nov 06 00:08 : client: [40] opened from 127.0.0.1:39992
+Nov 06 00:08 : client: [40] closed
+Nov 06 00:08 : client: [41] opened from 127.0.0.1:39996
+Nov 06 00:08 : client: [41] closed
+Nov 06 00:08 : client: [42] opened from 127.0.0.1:40000
+Nov 06 00:08 : client: [42] closed
+Nov 06 00:08 : client: [43] opened from 127.0.0.1:40004
+Nov 06 00:08 : client: [43] closed
+Nov 06 00:08 : client: [44] opened from 127.0.0.1:40008
+Nov 06 00:08 : client: [44] closed
+Nov 06 00:08 : client: [45] opened from 127.0.0.1:40012
+Nov 06 00:08 : client: [45] closed
+Nov 06 00:08 : client: [46] opened from 127.0.0.1:40016
+Nov 06 00:08 : client: [46] closed
+Nov 06 00:08 : client: [47] opened from 127.0.0.1:40020
+Nov 06 00:08 : client: [47] closed
+Nov 06 00:08 : client: [48] opened from 127.0.0.1:40024
+Nov 06 00:08 : client: [48] closed
+Nov 06 00:08 : client: [49] opened from 127.0.0.1:40028
+Nov 06 00:08 : client: [49] closed
+Nov 06 00:08 : client: [50] opened from 127.0.0.1:40032
+Nov 06 00:08 : client: [50] closed
+Nov 06 00:08 : client: [51] opened from 127.0.0.1:40036
+Nov 06 00:08 : client: [51] closed
+Nov 06 00:08 : client: [52] opened from 127.0.0.1:40040
+Nov 06 00:08 : client: [52] closed
+Nov 06 00:08 : client: [53] opened from 127.0.0.1:40044
+Nov 06 00:08 : client: [53] closed
+Nov 06 00:08 : client: [54] opened from 127.0.0.1:40048
+Nov 06 00:08 : client: [54] closed
+Nov 06 00:08 : client: [55] opened from 127.0.0.1:40052
+Nov 06 00:08 : client: [55] closed
+Nov 06 00:08 : client: [56] opened from 127.0.0.1:40056
+Nov 06 00:08 : client: [56] closed
+Nov 06 00:08 : client: [57] opened from 127.0.0.1:40060
+Nov 06 00:08 : client: [57] closed
+Nov 06 00:08 : client: [58] opened from 127.0.0.1:40064
+Nov 06 00:08 : client: [58] closed
+Nov 06 00:08 : client: [59] opened from 127.0.0.1:40068
+Nov 06 00:08 : client: [59] closed
+Nov 06 00:08 : client: [60] opened from 127.0.0.1:40072
+Nov 06 00:08 : client: [60] closed
+Nov 06 00:08 : client: [61] opened from 127.0.0.1:40076
+Nov 06 00:08 : client: [61] closed
+Nov 06 00:08 : client: [62] opened from 127.0.0.1:40080
+Nov 06 00:08 : client: [62] closed
+Nov 06 00:08 : client: [63] opened from 127.0.0.1:40084
+Nov 06 00:08 : client: [63] closed
+Nov 06 00:08 : client: [64] opened from 127.0.0.1:40088
+Nov 06 00:08 : client: [64] closed
+Nov 06 00:08 : client: [65] opened from 127.0.0.1:40092
+Nov 06 00:08 : client: [65] closed
+Nov 06 00:08 : client: [66] opened from 127.0.0.1:40096
+Nov 06 00:08 : client: [66] closed
+Nov 06 00:08 : client: [67] opened from 127.0.0.1:40100
+Nov 06 00:08 : client: [67] closed
+Nov 06 00:08 : client: [68] opened from 127.0.0.1:40104
+Nov 06 00:08 : client: [68] closed
+Nov 06 00:08 : client: [69] opened from 127.0.0.1:40108
+Nov 06 00:08 : client: [69] closed
+Nov 06 00:08 : client: [70] opened from 127.0.0.1:40112
+Nov 06 00:08 : client: [70] closed
+Nov 06 00:08 : client: [71] opened from 127.0.0.1:40116
+Nov 06 00:08 : client: [71] closed
+Nov 06 00:08 : client: [72] opened from 127.0.0.1:40120
+Nov 06 00:08 : client: [72] closed
+Nov 06 00:08 : client: [73] opened from 127.0.0.1:40124
+Nov 06 00:08 : client: [73] closed
+Nov 06 00:08 : client: [74] opened from 127.0.0.1:40128
+Nov 06 00:08 : client: [74] closed
+Nov 06 00:08 : client: [75] opened from 127.0.0.1:40132
+Nov 06 00:08 : client: [75] closed
+Nov 06 00:08 : client: [76] opened from 127.0.0.1:40136
+Nov 06 00:08 : client: [76] closed
+Nov 06 00:08 : client: [77] opened from 127.0.0.1:40140
+Nov 06 00:08 : client: [77] closed
+Nov 06 00:08 : client: [78] opened from 127.0.0.1:40144
+Nov 06 00:08 : client: [78] closed
+Nov 06 00:08 : client: [79] opened from 127.0.0.1:40148
+Nov 06 00:08 : client: [79] closed
+Nov 06 00:08 : client: [80] opened from 127.0.0.1:40152
+Nov 06 00:08 : client: [80] closed
+Nov 06 00:08 : client: [81] opened from 127.0.0.1:40156
+Nov 06 00:08 : client: [81] closed
+Nov 06 00:08 : client: [82] opened from 127.0.0.1:40160
+Nov 06 00:08 : client: [82] closed
+Nov 06 00:08 : client: [83] opened from 127.0.0.1:40164
+Nov 06 00:08 : client: [83] closed
+Nov 06 00:08 : client: [84] opened from 127.0.0.1:40168
+Nov 06 00:08 : client: [84] closed
+Nov 06 00:08 : client: [85] opened from 127.0.0.1:40172
+Nov 06 00:08 : client: [85] closed
+Nov 06 00:08 : client: [86] opened from 127.0.0.1:40176
+Nov 06 00:08 : client: [86] closed
+Nov 06 00:08 : client: [87] opened from 127.0.0.1:40180
+Nov 06 00:08 : client: [87] closed
+Nov 06 00:08 : client: [88] opened from 127.0.0.1:40184
+Nov 06 00:08 : client: [88] closed
+Nov 06 00:08 : client: [89] opened from 127.0.0.1:40188
+Nov 06 00:08 : client: [89] closed
+Nov 06 00:08 : client: [90] opened from 127.0.0.1:40192
+Nov 06 00:08 : client: [90] closed
+Nov 06 00:08 : client: [91] opened from 127.0.0.1:40196
+Nov 06 00:08 : client: [91] closed
+Nov 06 00:08 : client: [92] opened from 127.0.0.1:40200
+Nov 06 00:08 : client: [92] closed
+Nov 06 00:08 : client: [93] opened from 127.0.0.1:40204
+Nov 06 00:08 : client: [93] closed
+Nov 06 00:08 : client: [94] opened from 127.0.0.1:40208
+Nov 06 00:08 : client: [94] closed
+Nov 06 00:08 : client: [95] opened from 127.0.0.1:40212
+Nov 06 00:08 : client: [95] closed
+Nov 06 00:08 : client: [96] opened from 127.0.0.1:40216
+Nov 06 00:08 : client: [96] closed
+Nov 06 00:08 : client: [97] opened from 127.0.0.1:40220
+Nov 06 00:08 : client: [97] closed
+Nov 06 00:08 : client: [98] opened from 127.0.0.1:40224
+Nov 06 00:08 : client: [98] closed
+Nov 06 00:08 : client: [99] opened from 127.0.0.1:40228
+Nov 06 00:08 : client: [99] closed
+Nov 06 00:08 : client: [100] opened from 127.0.0.1:40232
+Nov 06 00:08 : client: [100] closed
+Nov 06 00:08 : client: [101] opened from 127.0.0.1:40236
+Nov 06 00:08 : client: [101] closed
+Nov 06 00:09 : client: [102] opened from 127.0.0.1:40252
+Nov 06 00:09 : client: [102] closed
+Nov 06 13:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 06 13:16 : client: [0] opened from 127.0.0.1:43338
+Nov 06 13:16 : client: [1] opened from 127.0.0.1:43342
+Nov 06 13:16 : client: [1] closed
+Nov 07 16:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 07 16:15 : client: [0] opened from 127.0.0.1:40872
+Nov 07 16:15 : client: [1] opened from 127.0.0.1:40876
+Nov 07 16:15 : client: [1] closed
+Nov 19 13:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 19 13:05 : client: [0] opened from 127.0.0.1:58634
+Nov 19 13:05 : client: [1] opened from 127.0.0.1:58638
+Nov 19 13:05 : client: [1] closed
+Dec 05 19:17 : client: [2] opened from 127.0.0.1:56164
+Dec 05 19:17 : client: [2] closed
+Dec 05 19:17 : client: [3] opened from 127.0.0.1:56168
+Dec 05 19:17 : client: [3] closed
+Dec 05 19:17 : client: [4] opened from 127.0.0.1:56172
+Dec 05 19:17 : client: [4] closed
+Dec 05 19:17 : client: [5] opened from 127.0.0.1:56176
+Dec 05 19:17 : client: [5] closed
+Dec 05 19:17 : client: [6] opened from 127.0.0.1:56180
+Dec 05 19:17 : client: [6] closed
+Dec 05 19:17 : client: [7] opened from 127.0.0.1:56184
+Dec 05 19:17 : client: [7] closed
+Dec 05 19:17 : client: [8] opened from 127.0.0.1:56188
+Dec 05 19:17 : client: [8] closed
+Dec 05 19:17 : client: [9] opened from 127.0.0.1:56192
+Dec 05 19:17 : client: [9] closed
+Dec 05 19:17 : client: [10] opened from 127.0.0.1:56196
+Dec 05 19:17 : client: [10] closed
+Dec 05 19:17 : client: [11] opened from 127.0.0.1:56200
+Dec 05 19:17 : client: [11] closed
+Dec 05 19:17 : client: [12] opened from 127.0.0.1:56204
+Dec 05 19:17 : client: [12] closed
+Dec 05 19:17 : client: [13] opened from 127.0.0.1:56208
+Dec 05 19:17 : client: [13] closed
+Dec 05 19:17 : client: [14] opened from 127.0.0.1:56212
+Dec 05 19:17 : client: [14] closed
+Dec 05 19:17 : client: [15] opened from 127.0.0.1:56216
+Dec 05 19:17 : client: [15] closed
+Dec 05 19:17 : client: [16] opened from 127.0.0.1:56220
+Dec 05 19:17 : client: [16] closed
+Dec 05 19:17 : client: [17] opened from 127.0.0.1:56224
+Dec 05 19:17 : client: [17] closed
+Dec 05 19:17 : client: [18] opened from 127.0.0.1:56228
+Dec 05 19:17 : client: [18] closed
+Dec 05 19:17 : client: [19] opened from 127.0.0.1:56232
+Dec 05 19:17 : client: [19] closed
+Dec 05 19:17 : client: [20] opened from 127.0.0.1:56236
+Dec 05 19:17 : client: [20] closed
+Dec 05 19:17 : client: [21] opened from 127.0.0.1:56240
+Dec 05 19:17 : client: [21] closed
+Dec 05 19:17 : client: [22] opened from 127.0.0.1:56244
+Dec 05 19:17 : client: [22] closed
+Dec 08 07:15 : client: [23] opened from 127.0.0.1:51080
+Dec 08 07:15 : client: [23] closed
+Dec 09 11:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 09 11:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 09 11:55 : client: [0] opened from 127.0.0.1:33974
+Dec 09 11:55 : client: [1] opened from 127.0.0.1:33978
+Dec 09 11:55 : client: [1] closed
+Dec 09 14:25 : client: [2] opened from 127.0.0.1:38598
+Dec 09 14:25 : client: [2] closed
+Dec 29 23:59 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 29 23:59 : client: [0] opened from 127.0.0.1:33764
+Dec 29 23:59 : client: [1] opened from 127.0.0.1:33768
+Dec 29 23:59 : client: [1] closed
+Dec 31 13:22 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 31 13:22 : client: [0] opened from 127.0.0.1:53296
+Dec 31 13:22 : client: [1] opened from 127.0.0.1:53300
+Dec 31 13:22 : client: [1] closed
+Dec 31 21:57 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 31 21:57 : client: [0] opened from 127.0.0.1:54982
+Dec 31 21:57 : client: [1] opened from 127.0.0.1:54986
+Dec 31 21:57 : client: [1] closed
+Jan 06 10:29 : client: [2] opened from 127.0.0.1:44760
+Jan 06 10:29 : client: [2] closed
+Jan 09 20:59 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 09 20:59 : client: [0] opened from 127.0.0.1:49950
+Jan 09 20:59 : client: [1] opened from 127.0.0.1:49954
+Jan 09 20:59 : client: [1] closed
+Feb 09 21:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 21:21 : client: [0] opened from 127.0.0.1:43496
+Feb 09 21:21 : client: [1] opened from 127.0.0.1:43500
+Feb 09 21:21 : client: [1] closed
+Feb 11 21:46 : client: [2] opened from 127.0.0.1:47830
+Feb 11 21:46 : client: [2] closed
+Feb 11 21:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 11 21:49 : client: [0] opened from 127.0.0.1:39506
+Feb 11 21:49 : client: [1] opened from 127.0.0.1:39510
+Feb 11 21:49 : client: [1] closed
+Feb 17 09:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 17 09:33 : client: [0] opened from 127.0.0.1:48322
+Feb 17 09:33 : client: [1] opened from 127.0.0.1:48326
+Feb 17 09:33 : client: [1] closed
+Mar 08 11:34 : client: [2] opened from 127.0.0.1:56000
+Mar 08 11:34 : client: [2] closed
+Mar 08 11:34 : client: [3] opened from 127.0.0.1:56036
+Mar 08 11:34 : client: [4] opened from 127.0.0.1:56040
+Mar 08 11:34 : client: [4] closed
+Mar 11 12:38 : client: [5] opened from 127.0.0.1:53582
+Mar 11 12:38 : client: [5] closed
+Mar 14 02:22 : client: [6] opened from 127.0.0.1:35158
+Mar 14 02:22 : client: [6] closed
+Mar 14 02:22 : client: [7] opened from 127.0.0.1:35186
+Mar 14 02:22 : client: [7] closed
+Mar 14 02:23 : client: [8] opened from 127.0.0.1:35240
+Mar 14 02:23 : client: [8] closed
+Mar 14 02:23 : client: [9] opened from 127.0.0.1:35276
+Mar 14 02:23 : client: [9] closed
+Mar 14 02:23 : client: [10] opened from 127.0.0.1:35378
+Mar 14 02:23 : client: [10] closed
+Mar 21 02:03 : client: [3] closed
+Mar 21 02:03 : client: [0] closed
+Mar 21 02:03 : client: [11] opened from 127.0.0.1:56796
+Mar 21 02:03 : client: [12] opened from 127.0.0.1:56794
+Mar 21 02:03 : client: [13] opened from 127.0.0.1:56798
+Mar 21 02:03 : client: [13] closed
+Mar 21 10:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 21 10:33 : client: [0] opened from 127.0.0.1:49006
+Mar 21 10:33 : client: [1] opened from 127.0.0.1:49010
+Mar 21 10:33 : client: [1] closed

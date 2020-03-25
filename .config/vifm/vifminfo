@@ -4,13 +4,13 @@
 'h
 	/home/ivan/
 	..
-1558053086
+1570281193
 
 # Bookmarks:
 
 # TUI:
 ar
-q1
+q0
 v2
 ov
 m-1
@@ -61,8 +61,8 @@ d/home/ivan/.config
 	
 0
 d/home/ivan
-	
-0
+	Audio
+1
 d
 
 # Right window history (oldest to newest):
@@ -162,11 +162,147 @@ D/home/ivan/Git/helveticvape-ch/forum/phpBB3/styles/prosilver/theme
 D/home/ivan/Git/helveticvape-ch/forum/phpBB3/styles/prosilver/theme/images
 	site_logo.gif
 27
+D/home/ivan/Git
+	..
+0
+D/home/ivan
+	Git
+31
+D/home
+	ivan
+1
+D/
+	run
+12
+D/run
+	mount
+10
+D/
+	run
+12
+D/run
+	user
+20
+D/run/user
+	1000
+1
+D/run/user/1000
+	i3
+5
+D/run/user
+	1000
+1
+D/run
+	user
+20
+D/
+	mnt
+8
+D/mnt
+	smbnet
+1
+D/mnt/smbnet
+	..
+0
+D/mnt
+	smbnet
+1
+D/
+	run
+12
+D/run
+	udev
+19
+D/run/udev
+	control
+6
+D/run
+	..
+0
+D/
+	home
+4
+D/home
+	..
+0
+D/
+	opt
+9
+D/home/ivan
+	..
+0
+D/home
+	ivan
+1
+D/home/ivan
+	Audio
+1
+D/home
+	ivan
+1
+D/home/ivan
+	Audio
+1
+D/home/ivan/Audio
+	..
+0
+D/home/ivan
+	Backups
+2
+D/home/ivan/Backups
+	..
+0
+D/home/ivan
+	Books
+3
+D/home/ivan/Books
+	..
+0
+D/home/ivan
+	Documents
+4
+D/home/ivan/Documents
+	MuseScore3
+1
+D/home/ivan/Documents/MuseScore3
+	..
+0
+D/home/ivan/Documents
+	MuseScore3
+1
+D/home/ivan
+	Downloads
+5
+D/home/ivan/Downloads
+	stupid trump.png
+11
+D/home/ivan
+	Git
+6
+D/home/ivan/Git
+	..
+0
+D/home/ivan
+	Git
+6
+D/home/ivan/Git
+	multisysinstall
+7
+D/home/ivan/Git/multisysinstall
+	optiplex
+2
+D/home/ivan/Git/multisysinstall/optiplex
+	etc
+1
+D/home/ivan/Git/multisysinstall/optiplex/etc
+	samba
+2
 D
 
 # Command line history (oldest to newest):
 :view
 :help
+:marks
 :q
 
 # Search history (oldest to newest):
@@ -188,6 +324,6 @@ i1
 [F
 F
 I1
-].0
+].1
 ]F
 s0

@@ -7,29 +7,45 @@ find \
 	-type f \
 	! -wholename './.m2*' \
 	! -wholename './Git/*' \
+	! -wholename './Admin/*' \
+	! -wholename './Backups/*' \
 	! -wholename './Downloads/*' \
+	! -wholename './Documents/*' \
 	! -wholename './Audio/*' \
 	! -wholename './Books/*' \
 	! -wholename './Images/*' \
 	! -wholename './Mail/*' \
-	! -wholename './Music/*' \
 	! -wholename './Office/*' \
+	! -wholename './Music/*' \
+	! -wholename './GrandOrgue*' \
 	! -wholename './Projects/*' \
-	! -wholename './Video/*' \
+	! -wholename './Videos/*' \
 	! -wholename './multisysinstall*' \
 	! -wholename './bin/*' \
 	! -wholename './srv/*' \
 	! -wholename './tmp/*' \
+	! -wholename './.password-store*' \
 	! -wholename './.cache/*' \
+	! -wholename './.jitsi/*' \
 	! -wholename './.config/chromium/*' \
 	! -wholename './.config/Code*' \
+	! -wholename './.config/GIMP*' \
+	! -wholename './.config/transmission*' \
 	! -wholename './.config/nvim/bundle/*' \
 	! -wholename './.emacs.d*' \
-	! -wholename './.git*' \
 	! -wholename './.gnupg*' \
+	! -wholename './.zoom*' \
+	! -wholename './.cargo*' \
+	! -wholename './.lein*' \
+	! -wholename './.dvdcss*' \
+	! -wholename './.squirrel-sql*' \
+	! -wholename './.java*' \
+	! -wholename './.config/libreoffice*' \
+	! -wholename './.git*' \
+	! -wholename './.cinnamon*' \
 	! -wholename './.jabba*' \
 	! -wholename './.rustup*' \
-	! -wholename './.cargo*' \
+	! -wholename './.clojure*' \
 	! -wholename './.local*' \
 	! -wholename './.mozilla*' \
 	! -wholename './.oh-my-zsh*' \
@@ -37,62 +53,69 @@ find \
 	! -wholename './.surf/cache*' \
 	! -wholename './.thunderbird*' \
 	! -wholename './.vscode*' \
+	! -wholename './.esd_auth' \
+	! -wholename './.*_history' \
+	! -wholename './.ICEauthority' \
+	! -wholename './Running' \
+	! -wholename './*.log' \
+	! -wholename './.Xauthority' \
+	! -wholename './.xsession-*' \
 	| while read file
 	do
 		mkdir -vp $(dirname $DEST/$file)
 		cp -v $file $DEST/$file
 	done
 
-# copy all links
-find \
-	-mindepth 1 \
-	-type l \
-	! -wholename './.m2*' \
-	! -wholename './Git/*' \
-	! -wholename './Downloads/*' \
-	! -wholename './Audio/*' \
-	! -wholename './Books/*' \
-	! -wholename './Images/*' \
-	! -wholename './Mail/*' \
-	! -wholename './Music/*' \
-	! -wholename './Office/*' \
-	! -wholename './Projects/*' \
-	! -wholename './Video/*' \
-	! -wholename './multisysinstall*' \
-	! -wholename './bin/*' \
-	! -wholename './srv/*' \
-	! -wholename './tmp/*' \
-	! -wholename './.cache/*' \
-	! -wholename './.config/chromium/*' \
-	! -wholename './.config/Code*' \
-	! -wholename './.config/nvim/bundle/*' \
-	! -wholename './.emacs.d*' \
-	! -wholename './.git*' \
-	! -wholename './.gnupg*' \
-	! -wholename './.jabba*' \
-	! -wholename './.rustup*' \
-	! -wholename './.cargo*' \
-	! -wholename './.local*' \
-	! -wholename './.mozilla*' \
-	! -wholename './.oh-my-zsh*' \
-	! -wholename './.ssh*' \
-	! -wholename './.surf/cache*' \
-	! -wholename './.thunderbird*' \
-	! -wholename './.vscode*' \
-	| while read file
-	do
-		mkdir -vp $(dirname $DEST/$file)
-#		ln -t $DEST -s -v $DEST/$(readlink $file) $file
-		cd
-		DIR=$(dirname $DEST/$file)
-		FILE=$(basename $DEST/$file)
-		LINK="$(readlink $file)"
-		echo "realpath $(pwd) $LINK"
-		LINKDIR=$(realpath --relative-to="$(pwd)" "$(pwd)/$LINK")
-		echo "-> $LINKDIR"
-		cd $DEST/$(basedir $LINKDIR)
-		echo "realpath $DIR $DEST/$LINKDIR"
-		LINKDIR=$(realpath --relative-to="." $DEST/$LINKDIR)
-		echo "-> $LINKDIR"
-		echo "link : $DIR $FILE file : $LINK $LINKDIR"
-	done
+# copy all link
+# find \
+# 	-mindepth 1 \
+# 	-type l \
+# 	! -wholename './.m2*' \
+# 	! -wholename './Git/*' \
+# 	! -wholename './Downloads/*' \
+# 	! -wholename './Audio/*' \
+# 	! -wholename './Books/*' \
+# 	! -wholename './Images/*' \
+# 	! -wholename './Mail/*' \
+# 	! -wholename './Music/*' \
+# 	! -wholename './Office/*' \
+# 	! -wholename './Projects/*' \
+# 	! -wholename './Video/*' \
+# 	! -wholename './multisysinstall*' \
+# 	! -wholename './bin/*' \
+# 	! -wholename './srv/*' \
+# 	! -wholename './tmp/*' \
+# 	! -wholename './.cache/*' \
+# 	! -wholename './.config/chromium/*' \
+# 	! -wholename './.config/Code*' \
+# 	! -wholename './.config/nvim/bundle/*' \
+# 	! -wholename './.emacs.d*' \
+# 	! -wholename './.git*' \
+# 	! -wholename './.gnupg*' \
+# 	! -wholename './.jabba*' \
+# 	! -wholename './.rustup*' \
+# 	! -wholename './.cargo*' \
+# 	! -wholename './.local*' \
+# 	! -wholename './.mozilla*' \
+# 	! -wholename './.oh-my-zsh*' \
+# 	! -wholename './.ssh*' \
+# 	! -wholename './.surf/cache*' \
+# 	! -wholename './.thunderbird*' \
+# 	! -wholename './.vscode*' \
+# 	| while read file
+# 	do
+# 		mkdir -vp $(dirname $DEST/$file)
+# #		ln -t $DEST -s -v $DEST/$(readlink $file) $file
+# 		cd
+# 		DIR=$(dirname $DEST/$file)
+# 		FILE=$(basename $DEST/$file)
+# 		LINK="$(readlink $file)"
+# 		echo "realpath $(pwd) $LINK"
+# 		LINKDIR=$(realpath --relative-to="$(pwd)" "$(pwd)/$LINK")
+# 		echo "-> $LINKDIR"
+# 		cd $DEST/$(basedir $LINKDIR)
+# 		echo "realpath $DIR $DEST/$LINKDIR"
+# 		LINKDIR=$(realpath --relative-to="." $DEST/$LINKDIR)
+# 		echo "-> $LINKDIR"
+# 		echo "link : $DIR $FILE file : $LINK $LINKDIR"
+# 	done
