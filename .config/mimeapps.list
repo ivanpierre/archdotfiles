@@ -14,6 +14,10 @@ x-scheme-handler/snews=userapp-Thunderbird-H0XL1Z.desktop
 x-scheme-handler/nntp=userapp-Thunderbird-H0XL1Z.desktop
 x-scheme-handler/feed=userapp-Thunderbird-GR8C1Z.desktop
 application/x-extension-rss=userapp-Thunderbird-GR8C1Z.desktop
+video/x-msvideo=vlc.desktop
+video/x-matroska=vlc.desktop
+video/mp4=vlc.desktop
+video/mp2t=vlc.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-UXXJ1Z.desktop;
@@ -24,3 +28,7 @@ x-scheme-handler/nntp=userapp-Thunderbird-H0XL1Z.desktop;
 x-scheme-handler/feed=userapp-Thunderbird-GR8C1Z.desktop;
 application/rss+xml=userapp-Thunderbird-GR8C1Z.desktop;
 application/x-extension-rss=userapp-Thunderbird-GR8C1Z.desktop;
+video/x-msvideo=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/mp4=vlc.desktop;
+video/mp2t=vlc.desktop;
