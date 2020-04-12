@@ -1,4 +1,4 @@
-command=~/.scripts/statusbar/$BLOCK_NAME
+command=~/.local/bin/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
@@ -13,15 +13,13 @@ interval=once
 signal=11
 
 [news]
-label=📰
 interval=once
 signal=6
 
-[iplocate]
-interval=30
+#[iplocate]
+#interval=30
 
 [pacpackages]
-label=📦
 interval=once
 signal=8
 
@@ -34,29 +32,26 @@ interval=18000
 signal=5
 
 [mailbox]
-label=📬
 interval=180
 signal=12
 
-[memory]
-interval=30
-label=🧠
+#[memory]
+#interval=30
 
-[cpu]
-interval=15
-label=💻
+#[cpu]
+#interval=15
 
 [volume]
 interval=once
 signal=10
 
-[disk]
-interval=60
-command=disk /
+#[disk]
+#interval=60
+#command=disk /
 
-[disk]
-interval=60
-command=disk /home 🏠
+#[disk]
+#interval=60
+#command=disk /home
 
 [battery]
 command=battery BAT0

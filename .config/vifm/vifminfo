@@ -61,14 +61,10 @@ d/home/ivan/.config
 	
 0
 d/home/ivan
-	Audio
-1
-d
-
-# Right window history (oldest to newest):
-D/home/ivan
 	..
 0
+
+# Right window history (oldest to newest):
 D/home
 	ivan
 1
@@ -297,7 +293,9 @@ D/home/ivan/Git/multisysinstall/optiplex
 D/home/ivan/Git/multisysinstall/optiplex/etc
 	samba
 2
-D
+D/home/ivan
+	..
+0
 
 # Command line history (oldest to newest):
 :view
@@ -316,14 +314,3 @@ D
 # Directory stack (oldest to newest):
 
 # Trash content:
-
-# State:
-f
-i1
-[.1
-[F
-F
-I1
-].1
-]F
-s0
