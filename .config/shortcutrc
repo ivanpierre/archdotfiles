@@ -3,9 +3,9 @@
 # Goto main directories
 alias A="cd ~/Audio && ls -a"
 alias C="cd ~/.config && ls -a"
-alias D="cd ~/Downloads && ls -a"
-alias G="cd ~/Git && ls -a"
-alias I="cd ~/Images && ls -a"
+alias D="cd /mnt/s4t1/_Download && ls -a"
+alias G="cd /mnt/s4t1/_Git && ls -a"
+alias I="cd /mnt/s4t1/_Pictures && ls -a"
 alias M="cd /mnt && ls -a"
 alias O="cd ~/Office && ls -a"
 alias R="cd ~/ && ls -a"
