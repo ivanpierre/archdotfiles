@@ -11,6 +11,7 @@
 /.config/transmission
 /.config/nvim/bundle
 /.config/libreoffice
+/.config/filezilla
 /.emacs.d
 /.gnupg
 /.zoom
