@@ -31,7 +31,6 @@ alias \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
-	v="$EDITOR" \
 	p="sudo pacman" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
@@ -44,9 +43,20 @@ alias \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
 
-
-alias ll="ls -lai"
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias se="sudoedit"
+alias \
+	se="sudoedit" \
+	..='cd ..' \
+	...='cd ../..' \
+	....='cd ../../..' \
+	grep='grep --color=auto' \
+	ka='killall' \
+	ll='ls -lai' \
+	ls='ls -hN --color=auto --group-directories-first' \
+	mkd='mkdir -pv' \
+	sdn='sudo shutdown -h now' \
+	se='sudoedit' \
+	treg='transmission-gtk' \
+	trem='transmission-remote' \
+	v='vim' \
+	vi='vim' \
+	vimdiff='nvim -d'
