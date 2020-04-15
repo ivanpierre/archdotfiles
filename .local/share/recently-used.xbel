@@ -513,4 +513,34 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/ivan/Downloads/test%20Clojure.jpeg" added="2020-04-13T08:09:55Z" modified="2020-04-13T08:10:11Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2020-04-13T08:10:11Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ivan/.thunderbird/lokoyonv.default/Mail" added="2020-04-13T08:45:15Z" modified="2020-04-13T08:45:15Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird %u&apos;" modified="2020-04-13T08:45:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ivan/Downloads/nyc%20after%20the%20storm.jpeg" added="2020-04-14T08:41:29Z" modified="2020-04-14T08:41:48Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2020-04-14T08:41:48Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
