@@ -1,2 +1,5 @@
 #!/bin/sh
-pkill -f /dev/video || mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --geometry=-0-0 --autofit=30%  --title="mpvfloat" /dev/video0
+pkill -f /dev/video || mpv --no-osc --no-input-default-bindings --input-conf=/dev/null \
+	--vo=xv --opengl-glfinish=yes --opengl-swapinterval=0 --untimed --profile=low-latency \
+	--geometry=-0-0 --autofit=50%  --title="mpvfloat" \
+	/dev/video0

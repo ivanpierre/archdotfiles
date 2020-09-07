@@ -1,3 +1,7 @@
 [user]
 	email = me@ivanpierre.world
 	name = ivanpierre
+[credential]
+	helper = store
+[credential "github.com"]
+	useHttpPath = true

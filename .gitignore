@@ -13,6 +13,7 @@
 /.config/libreoffice
 /.config/filezilla
 /.emacs.d
+/.git-credencials
 /.gnupg
 /.zoom
 /.cargo
