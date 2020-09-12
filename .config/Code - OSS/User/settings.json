@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "**/i3/config*": "i3"
+    },
+    "editor.fontFamily": "'Noto Sans Mono'",
+    "editor.fontLigatures": null
+}

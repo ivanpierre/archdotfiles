@@ -1,0 +1,96 @@
+file:///home/ivan/.config/sxhkd/wm/i3/sxhkdrc {"mtime":1599923069174,"ctime":1599919484238,"size":3617,"etag":"35llhgcr03nl","orphaned":false}
+# Start wm/i3/sxhkdrc
+# sxhkd file for i3 specific action on nodes, workspaces, etc
+
+###################################
+# Interaction of code with UI
+super+shift+t	gaps inner current set $inner_gaps; gaps outer current set $outer_gaps
+super+shift+d	gaps inner current set 0; gaps outer current set 0
+super+alt+Right			gaps inner current plus 5
+super+alt+Up			gaps outer current plus 5
+super+alt+Down	gaps outer current minus 5
+super+alt+Left	gaps inner current minus 5
+
+super+b			bar mode toggle
+super+f			fullscreen toggle
+super+o			sticky toggle
+super+t			split toggle
+super+shift+space 	floating toggle
+
+super+F2			restart
+XF86Reload		restart
+
+super+shift+slash	kill
+XF86Close		kill
+super+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+super+shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
+
+super+Tab			workspace back_and_forth
+super+backslash		workspace back_and_forth
+super+g				workspace prev
+super+Escape			workspace prev
+super+Prior			workspace prev
+super+XF86Back		workspace prev
+super+semicolon		workspace next
+super+XF86Forward	workspace next
+super+Next			workspace next
+
+super+1				workspace $ws1
+super+Home			workspace $ws1
+super+2				workspace $ws2
+super+3				workspace $ws3
+super+4				workspace $ws4
+super+5				workspace $ws5
+super+6				workspace $ws6
+super+7				workspace $ws7
+super+8				workspace $ws8
+super+9				workspace $ws9
+super+0				workspace $ws10
+super+End			workspace $ws10
+
+super+shift+Prior	move container to workspace prev
+super+shift+XF86Back	move container to workspace prev
+super+shift+Next		move container to workspace next
+super+shift+XF86Forward	move container to workspace next
+
+super+shift+Home		move container to workspace $ws1
+super+shift+End		move container to workspace $ws10
+super+shift+1		move container to workspace $ws1
+super+shift+2		move container to workspace $ws2
+super+shift+3		move container to workspace $ws3
+super+shift+4		move container to workspace $ws4
+super+shift+5		move container to workspace $ws5
+super+shift+6		move container to workspace $ws6
+super+shift+7		move container to workspace $ws7
+super+shift+8		move container to workspace $ws8
+super+shift+9		move container to workspace $ws9
+super+shift+0		move container to workspace $ws10
+
+super+shift+ctrl+Left	move workspace to output left
+super+shift+ctrl+Down	move workspace to output down
+super+shift+ctrl+Up		move workspace to output up
+super+shift+ctrl+Right	move workspace to output right
+
+super+shift+Left		move left
+super+shift+Down		move down
+super+shift+Up		move up
+super+shift+Right 	move right
+
+super+shift+h		move left 30
+super+shift+j		move down 30
+super+shift+k		move up 30
+super+shift+l		move right 30
+
+super+Left			focus left
+super+Down			focus down
+super+Up				focus up
+super+Right 			focus right
+
+super+space			focus mode_toggle
+
+super+ctrl+Left		exec --no-startup-id i3resize left
+super+ctrl+Down		exec --no-startup-id i3resize down
+super+ctrl+Up		exec --no-startup-id i3resize up
+super+ctrl+Right		exec --no-startup-id i3resize right
+
+# end of  wm/i3/sxhkdrc

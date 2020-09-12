@@ -1,0 +1,9 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "Hybrid";
+  terminal:			  "termite";
+  cycle:              false;
+  hide-scrollbar:     true;
+  disable-history:    false;
+  modi: "window,run,ssh,windowcd,drun,combi,keys";
+}

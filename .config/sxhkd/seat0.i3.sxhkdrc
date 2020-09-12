@@ -1,0 +1,240 @@
+# Start wm/i3/sxhkdrc
+# sxhkd file for i3 specific action on nodes, workspaces, etc
+
+###################################
+# Interaction of code with UI
+bindsym $mod+Shift+t	gaps inner current set $inner_gaps; gaps outer current set $outer_gaps
+bindsym $mod+Shift+d	gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Mod1+Right			gaps inner current plus 5
+bindsym $mod+Mod1+Up			gaps outer current plus 5
+bindsym $mod+Mod1+Down	gaps outer current minus 5
+bindsym $mod+Mod1+Left	gaps inner current minus 5
+
+bindsym $mod+b			bar mode toggle
+bindsym $mod+f			fullscreen toggle
+bindsym $mod+o			sticky toggle
+bindsym $mod+t			split toggle
+bindsym $mod+Shift+space 	floating toggle
+
+bindsym $mod+F2			restart
+bindsym XF86Reload		restart
+
+bindsym $mod+Shift+slash	kill
+bindsym XF86Close		kill
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
+
+bindsym $mod+Tab			workspace back_and_forth
+bindsym $mod+backslash		workspace back_and_forth
+bindsym $mod+g				workspace prev
+bindsym $mod+Escape			workspace prev
+bindsym $mod+Prior			workspace prev
+bindsym $mod+XF86Back		workspace prev
+bindsym $mod+semicolon		workspace next
+bindsym $mod+XF86Forward	workspace next
+bindsym $mod+Next			workspace next
+
+bindsym $mod+1				workspace $ws1
+bindsym $mod+Home			workspace $ws1
+bindsym $mod+2				workspace $ws2
+bindsym $mod+3				workspace $ws3
+bindsym $mod+4				workspace $ws4
+bindsym $mod+5				workspace $ws5
+bindsym $mod+6				workspace $ws6
+bindsym $mod+7				workspace $ws7
+bindsym $mod+8				workspace $ws8
+bindsym $mod+9				workspace $ws9
+bindsym $mod+0				workspace $ws10
+bindsym $mod+End			workspace $ws10
+
+bindsym $mod+Shift+Prior	move container to workspace prev
+bindsym $mod+Shift+XF86Back	move container to workspace prev
+bindsym $mod+Shift+Next		move container to workspace next
+bindsym $mod+Shift+XF86Forward	move container to workspace next
+
+bindsym $mod+Shift+Home		move container to workspace $ws1
+bindsym $mod+Shift+End		move container to workspace $ws10
+bindsym $mod+Shift+1		move container to workspace $ws1
+bindsym $mod+Shift+2		move container to workspace $ws2
+bindsym $mod+Shift+3		move container to workspace $ws3
+bindsym $mod+Shift+4		move container to workspace $ws4
+bindsym $mod+Shift+5		move container to workspace $ws5
+bindsym $mod+Shift+6		move container to workspace $ws6
+bindsym $mod+Shift+7		move container to workspace $ws7
+bindsym $mod+Shift+8		move container to workspace $ws8
+bindsym $mod+Shift+9		move container to workspace $ws9
+bindsym $mod+Shift+0		move container to workspace $ws10
+
+bindsym $mod+Shift+Ctrl+Left	move workspace to output left
+bindsym $mod+Shift+Ctrl+Down	move workspace to output down
+bindsym $mod+Shift+Ctrl+Up		move workspace to output up
+bindsym $mod+Shift+Ctrl+Right	move workspace to output right
+
+bindsym $mod+Shift+Left		move left
+bindsym $mod+Shift+Down		move down
+bindsym $mod+Shift+Up		move up
+bindsym $mod+Shift+Right 	move right
+
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Shift+l		move right 30
+
+bindsym $mod+Left			focus left
+bindsym $mod+Down			focus down
+bindsym $mod+Up				focus up
+bindsym $mod+Right 			focus right
+
+bindsym $mod+space			focus mode_toggle
+
+bindsym $mod+Ctrl+Left		exec --no-startup-id i3resize left
+bindsym $mod+Ctrl+Down		exec --no-startup-id i3resize down
+bindsym $mod+Ctrl+Up		exec --no-startup-id i3resize up
+bindsym $mod+Ctrl+Right		exec --no-startup-id i3resize right
+
+# end of  wm/i3/sxhkdrc
+# start of sxhkdrc.exe
+# The Simple X Hotkey Daemon is the program used by kilroySoft to map most of the
+# executable commands.  This file is pretty readable, so I'll let you read it.
+
+###################################
+# Execution of code
+# #---Basic Bindings---# #
+super+shift+Escape		exec --no-startup-id prompt "Exit i3?" "i3 exit"
+super+shift+BackSpace	exec --no-startup-id prompt "Reboot computer?" "sudo -A reboot"
+super+shift+x			exec --no-startup-id prompt "Shutdown computer?" "sudo -A shutdown -h now"
+XF86PowerOff			exec --no-startup-id prompt "Shutdown computer?" "sudo -A shutdown -h now"
+super+F4					exec --no-startup-id prompt "Hibernate computer?" "sudo -A systemctl suspend"
+
+XF86WLAN				exec --no-startup-id sudo -A systemctl restart NetworkManager
+super+F5					exec --no-startup-id sudo -A systemctl restart NetworkManager
+
+##################
+# Termite + terminal app
+super+Return 			exec $term
+super+shift+Return		exec --no-startup-id samedir
+super+shift+w			exec $term -e nmtui
+super+r 					exec $term -e lf
+super+e					exec $term -e neomutt && pkill -RTMIN+12 i3blocks
+super+y					exec $term -e calcurse
+super+i 					exec $term -e htop
+super+n					exec $term -e newsboat && pkill -RTMIN+6 i3blocks
+super+m 					exec $term -e ncmpcpp
+XF86Messenger			exec $term -e weechat
+
+##################
+# Music control (pulsemixer)
+super+shift+a					exec $term -e pulsemixer
+super+shift+m					exec --no-startup-id pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
+XF86AudioMute					exec --no-startup-id pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
+super+shift+Delete				exec --no-startup-id pulsemixer --mute ; exec --no-startup-id mpc pause && pkill -RTMIN+10 i3blocks ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e lf
+super+plus						exec --no-startup-id pulsemixer --change-volume +5 && pkill -RTMIN+10 i3blocks
+super+shift+plus					exec --no-startup-id pulsemixer --change-volume +15 && pkill -RTMIN+10 i3blocks
+super+minus 						exec --no-startup-id pulsemixer --change-volume -5 && pkill -RTMIN+10 i3blocks
+super+shift+minus				exec --no-startup-id pulsemixer --change-volume -15 && pkill -RTMIN+10 i3blocks
+XF86AudioLowerVolume			exec --no-startup-id pulsemixer --change-volume -5 && pkill -RTMIN+10 i3blocks
+shift+XF86AudioLowerVolume		exec --no-startup-id pulsemixer --change-volume -10 && pkill -RTMIN+10 i3blocks
+Control+XF86AudioLowerVolume	exec --no-startup-id pulsemixer --change-volume -1 && pkill -RTMIN+10 i3blocks
+XF86AudioRaiseVolume			exec --no-startup-id pulsemixer --change-volume +5 && pkill -RTMIN+10 i3blocks
+shift+XF86AudioRaiseVolume		exec --no-startup-id pulsemixer --change-volume +10 && pkill -RTMIN+10 i3blocks
+Control+XF86AudioRaiseVolume	exec --no-startup-id pulsemixer --change-volume +1 && pkill -RTMIN+10 i3blocks
+
+##################
+# Music control
+super+p					exec --no-startup-id mpc toggle
+XF86AudioPlay			exec --no-startup-id mpc toggle
+XF86AudioStop			exec --no-startup-id mpc toggle
+
+super+shift+p			exec --no-startup-id mpc pause
+
+XF86AudioNext			exec --no-startup-id mpc next
+super+greater			exec --no-startup-id mpc next
+super+shift+greater		exec --no-startup-id mpc next
+
+XF86AudioPrev			exec --no-startup-id mpc prev
+super+less 				exec --no-startup-id mpc prev
+
+super+shift+less			exec --no-startup-id mpc seek 0%
+XF86AudioRewind			exec --no-startup-id mpc seek -10
+XF86AudioForward		exec --no-startup-id mpc seek +10
+# super+bracketleft 		exec --no-startup-id mpc seek -10
+# super+bracketright 		exec --no-startup-id mpc seek +10
+# super+shift+bracketleft 	exec --no-startup-id mpc seek -120
+# super+shift+bracketright 	exec --no-startup-id mpc seek +120
+
+super+x					exec --no-startup-id xset dpms force off && mpc pause && pauseallmpv && slock &
+
+##################
+# Browser
+super+w					exec --no-startup-id $BROWSER
+XF86WWW					exec --no-startup-id $BROWSER
+XF86HomePage			exec $BROWSER https://lukesmith.xyz
+XF86Search				exec $BROWSER https://duckduckgo.com
+XF86Shop				exec $BROWSER https://ebay.com
+super+F11				exec --no-startup-id ducksearch
+
+
+##################
+# DMenu (Rofi)
+super+ctrl+p 			exec --no-startup-id dmenuunicode
+super+d					exec --no-startup-id rofi -show run
+super+F9					exec --no-startup-id dmenumount
+super+F10				exec --no-startup-id dmenuumount
+XF86Eject				exec --no-startup-id dmenuumount
+super+Print				exec --no-startup-id dmenurecord
+super+Delete				exec --no-startup-id dmenurecord kill
+
+##################
+# ddspawn
+super+u					exec --no-startup-id ddspawn tmuxdd
+super+a					exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
+XF86Calculator			exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
+
+##################
+# TouchPad
+XF86TouchpadOn			exec --no-startup-id synclient TouchpadOff=0
+XF86TouchpadOff			exec --no-startup-id synclient TouchpadOff=1
+XF86TouchpadToggle		exec --no-startup-id toggletouchpad
+
+##################
+# LockScreen
+XF86ScreenSaver			exec --no-startup-id lockscreen
+XF86Suspend				exec --no-startup-id lockscreen
+
+##################
+# Take picture
+Print 					exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+shift+Print 			exec --no-startup-id maimpick
+
+##################
+# Camera
+super+shift+c			exec --no-startup-id camtoggle
+XF86WebCam				exec --no-startup-id camtoggle
+
+##################
+# Brightness
+XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 15
+XF86MonBrightnessUp		exec --no-startup-id xbacklight -inc 15
+
+##################
+# Transmission
+super+F6					exec --no-startup-id torwrap
+super+F7					exec --no-startup-id td-toggle
+
+##################
+# ImageMagik
+XF86Display				exec --no-startup-id display
+
+super+Insert				exec --no-startup-id notify-send "📋 Clipboard contents:" "$(xclip -o -selection clipboard)"
+super+shift+e			exec --no-startup-id tutorialvids
+super+shift+r			exec --no-startup-id winresize
+super+shift+g			exec --no-startup-id gimp; workspace $ws5
+super+c					exec --no-startup-id cabl
+super+F1					exec --no-startup-id groff -mom ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/readme.mom -Tpdf | zathura -
+super+F3					exec --no-startup-id displayselect
+super+F8					exec --no-startup-id mailsync
+super+shift+F1			exec --no-startup-id toggle-welcome
+super+Scroll_Lock		exec --no-startup-id "killall screenkey || screenkey"
+XF86Launch1				exec --no-startup-id xset dpms force off
+
+# end of sxhkdrc.exe

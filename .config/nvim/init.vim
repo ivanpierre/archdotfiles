@@ -18,9 +18,18 @@ Plug 'vimwiki/vimwiki'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'kovetskiy/sxhkd-vim'
+Plug 'powerline/powerline'
+Plug 'liuchengxu/vim-which-key'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-set bg=light
+let g:gruvbox_contrast_dark = 'hard'
+set bg=dark
+set termguicolors
+
+autocmd vimenter * colorscheme gruvbox
+" colorscheme gruvbox
+
 set go=a
 set mouse=a
 set nohlsearch
@@ -117,3 +126,8 @@ set clipboard+=unnamedplus
 if &diff
     highlight! link DiffText MatchParen
 endif
+
+" Manage which-key
+let g:maplocalleader = "\<Space>"
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>

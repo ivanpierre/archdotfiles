@@ -1,0 +1,145 @@
+# start of sxhkdrc.exe
+# The Simple X Hotkey Daemon is the program used by kilroySoft to map most of the
+# executable commands.  This file is pretty readable, so I'll let you read it.
+
+###################################
+# Execution of code
+# #---Basic Bindings---# #
+super+shift+Escape		exec --no-startup-id prompt "Exit i3?" "i3 exit"
+super+shift+BackSpace	exec --no-startup-id prompt "Reboot computer?" "sudo -A reboot"
+super+shift+x			exec --no-startup-id prompt "Shutdown computer?" "sudo -A shutdown -h now"
+XF86PowerOff			exec --no-startup-id prompt "Shutdown computer?" "sudo -A shutdown -h now"
+super+F4					exec --no-startup-id prompt "Hibernate computer?" "sudo -A systemctl suspend"
+
+XF86WLAN				exec --no-startup-id sudo -A systemctl restart NetworkManager
+super+F5					exec --no-startup-id sudo -A systemctl restart NetworkManager
+
+##################
+# Termite + terminal app
+super+Return 			exec $term
+super+shift+Return		exec --no-startup-id samedir
+super+shift+w			exec $term -e nmtui
+super+r 					exec $term -e lf
+super+e					exec $term -e neomutt && pkill -RTMIN+12 i3blocks
+super+y					exec $term -e calcurse
+super+i 					exec $term -e htop
+super+n					exec $term -e newsboat && pkill -RTMIN+6 i3blocks
+super+m 					exec $term -e ncmpcpp
+XF86Messenger			exec $term -e weechat
+
+##################
+# Music control (pulsemixer)
+super+shift+a					exec $term -e pulsemixer
+super+shift+m					exec --no-startup-id pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
+XF86AudioMute					exec --no-startup-id pulsemixer --toggle-mute && pkill -RTMIN+10 i3blocks
+super+shift+Delete				exec --no-startup-id pulsemixer --mute ; exec --no-startup-id mpc pause && pkill -RTMIN+10 i3blocks ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e lf
+super+plus						exec --no-startup-id pulsemixer --change-volume +5 && pkill -RTMIN+10 i3blocks
+super+shift+plus					exec --no-startup-id pulsemixer --change-volume +15 && pkill -RTMIN+10 i3blocks
+super+minus 						exec --no-startup-id pulsemixer --change-volume -5 && pkill -RTMIN+10 i3blocks
+super+shift+minus				exec --no-startup-id pulsemixer --change-volume -15 && pkill -RTMIN+10 i3blocks
+XF86AudioLowerVolume			exec --no-startup-id pulsemixer --change-volume -5 && pkill -RTMIN+10 i3blocks
+shift+XF86AudioLowerVolume		exec --no-startup-id pulsemixer --change-volume -10 && pkill -RTMIN+10 i3blocks
+Control+XF86AudioLowerVolume	exec --no-startup-id pulsemixer --change-volume -1 && pkill -RTMIN+10 i3blocks
+XF86AudioRaiseVolume			exec --no-startup-id pulsemixer --change-volume +5 && pkill -RTMIN+10 i3blocks
+shift+XF86AudioRaiseVolume		exec --no-startup-id pulsemixer --change-volume +10 && pkill -RTMIN+10 i3blocks
+Control+XF86AudioRaiseVolume	exec --no-startup-id pulsemixer --change-volume +1 && pkill -RTMIN+10 i3blocks
+
+##################
+# Music control
+super+p					exec --no-startup-id mpc toggle
+XF86AudioPlay			exec --no-startup-id mpc toggle
+XF86AudioStop			exec --no-startup-id mpc toggle
+
+super+shift+p			exec --no-startup-id mpc pause
+
+XF86AudioNext			exec --no-startup-id mpc next
+super+greater			exec --no-startup-id mpc next
+super+shift+greater		exec --no-startup-id mpc next
+
+XF86AudioPrev			exec --no-startup-id mpc prev
+super+less 				exec --no-startup-id mpc prev
+
+super+shift+less			exec --no-startup-id mpc seek 0%
+XF86AudioRewind			exec --no-startup-id mpc seek -10
+XF86AudioForward		exec --no-startup-id mpc seek +10
+# super+bracketleft 		exec --no-startup-id mpc seek -10
+# super+bracketright 		exec --no-startup-id mpc seek +10
+# super+shift+bracketleft 	exec --no-startup-id mpc seek -120
+# super+shift+bracketright 	exec --no-startup-id mpc seek +120
+
+super+x					exec --no-startup-id xset dpms force off && mpc pause && pauseallmpv && slock &
+
+##################
+# Browser
+super+w					exec --no-startup-id $BROWSER
+XF86WWW					exec --no-startup-id $BROWSER
+XF86HomePage			exec $BROWSER https://lukesmith.xyz
+XF86Search				exec $BROWSER https://duckduckgo.com
+XF86Shop				exec $BROWSER https://ebay.com
+super+F11				exec --no-startup-id ducksearch
+
+
+##################
+# DMenu (Rofi)
+super+ctrl+p 			exec --no-startup-id dmenuunicode
+super+d					exec --no-startup-id rofi -show run
+super+F9					exec --no-startup-id dmenumount
+super+F10				exec --no-startup-id dmenuumount
+XF86Eject				exec --no-startup-id dmenuumount
+super+Print				exec --no-startup-id dmenurecord
+super+Delete				exec --no-startup-id dmenurecord kill
+
+##################
+# ddspawn
+super+u					exec --no-startup-id ddspawn tmuxdd
+super+a					exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
+XF86Calculator			exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
+
+##################
+# TouchPad
+XF86TouchpadOn			exec --no-startup-id synclient TouchpadOff=0
+XF86TouchpadOff			exec --no-startup-id synclient TouchpadOff=1
+XF86TouchpadToggle		exec --no-startup-id toggletouchpad
+
+##################
+# LockScreen
+XF86ScreenSaver			exec --no-startup-id lockscreen
+XF86Suspend				exec --no-startup-id lockscreen
+
+##################
+# Take picture
+Print 					exec --no-startup-id maim pic-full-"$(date '+%y%m%d-%H%M-%S').png"
+shift+Print 			exec --no-startup-id maimpick
+
+##################
+# Camera
+super+shift+c			exec --no-startup-id camtoggle
+XF86WebCam				exec --no-startup-id camtoggle
+
+##################
+# Brightness
+XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 15
+XF86MonBrightnessUp		exec --no-startup-id xbacklight -inc 15
+
+##################
+# Transmission
+super+F6					exec --no-startup-id torwrap
+super+F7					exec --no-startup-id td-toggle
+
+##################
+# ImageMagik
+XF86Display				exec --no-startup-id display
+
+super+Insert				exec --no-startup-id notify-send "📋 Clipboard contents:" "$(xclip -o -selection clipboard)"
+super+shift+e			exec --no-startup-id tutorialvids
+super+shift+r			exec --no-startup-id winresize
+super+shift+g			exec --no-startup-id gimp; workspace $ws5
+super+c					exec --no-startup-id cabl
+super+F1					exec --no-startup-id groff -mom ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/readme.mom -Tpdf | zathura -
+super+F3					exec --no-startup-id displayselect
+super+F8					exec --no-startup-id mailsync
+super+shift+F1			exec --no-startup-id toggle-welcome
+super+Scroll_Lock		exec --no-startup-id "killall screenkey || screenkey"
+XF86Launch1				exec --no-startup-id xset dpms force off
+
+# end of sxhkdrc.exe

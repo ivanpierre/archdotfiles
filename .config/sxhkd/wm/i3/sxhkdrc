@@ -1,0 +1,95 @@
+# Start wm/i3/sxhkdrc
+# sxhkd file for i3 specific action on nodes, workspaces, etc
+
+###################################
+# Interaction of code with UI
+bindsym $mod+Shift+t	gaps inner current set $inner_gaps; gaps outer current set $outer_gaps
+bindsym $mod+Shift+d	gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Mod1+Right			gaps inner current plus 5
+bindsym $mod+Mod1+Up			gaps outer current plus 5
+bindsym $mod+Mod1+Down	gaps outer current minus 5
+bindsym $mod+Mod1+Left	gaps inner current minus 5
+
+bindsym $mod+b			bar mode toggle
+bindsym $mod+f			fullscreen toggle
+bindsym $mod+o			sticky toggle
+bindsym $mod+t			split toggle
+bindsym $mod+Shift+space 	floating toggle
+
+bindsym $mod+F2			restart
+bindsym XF86Reload		restart
+
+bindsym $mod+Shift+slash	kill
+bindsym XF86Close		kill
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
+
+bindsym $mod+Tab			workspace back_and_forth
+bindsym $mod+backslash		workspace back_and_forth
+bindsym $mod+g				workspace prev
+bindsym $mod+Escape			workspace prev
+bindsym $mod+Prior			workspace prev
+bindsym $mod+XF86Back		workspace prev
+bindsym $mod+semicolon		workspace next
+bindsym $mod+XF86Forward	workspace next
+bindsym $mod+Next			workspace next
+
+bindsym $mod+1				workspace $ws1
+bindsym $mod+Home			workspace $ws1
+bindsym $mod+2				workspace $ws2
+bindsym $mod+3				workspace $ws3
+bindsym $mod+4				workspace $ws4
+bindsym $mod+5				workspace $ws5
+bindsym $mod+6				workspace $ws6
+bindsym $mod+7				workspace $ws7
+bindsym $mod+8				workspace $ws8
+bindsym $mod+9				workspace $ws9
+bindsym $mod+0				workspace $ws10
+bindsym $mod+End			workspace $ws10
+
+bindsym $mod+Shift+Prior	move container to workspace prev
+bindsym $mod+Shift+XF86Back	move container to workspace prev
+bindsym $mod+Shift+Next		move container to workspace next
+bindsym $mod+Shift+XF86Forward	move container to workspace next
+
+bindsym $mod+Shift+Home		move container to workspace $ws1
+bindsym $mod+Shift+End		move container to workspace $ws10
+bindsym $mod+Shift+1		move container to workspace $ws1
+bindsym $mod+Shift+2		move container to workspace $ws2
+bindsym $mod+Shift+3		move container to workspace $ws3
+bindsym $mod+Shift+4		move container to workspace $ws4
+bindsym $mod+Shift+5		move container to workspace $ws5
+bindsym $mod+Shift+6		move container to workspace $ws6
+bindsym $mod+Shift+7		move container to workspace $ws7
+bindsym $mod+Shift+8		move container to workspace $ws8
+bindsym $mod+Shift+9		move container to workspace $ws9
+bindsym $mod+Shift+0		move container to workspace $ws10
+
+bindsym $mod+Shift+Ctrl+Left	move workspace to output left
+bindsym $mod+Shift+Ctrl+Down	move workspace to output down
+bindsym $mod+Shift+Ctrl+Up		move workspace to output up
+bindsym $mod+Shift+Ctrl+Right	move workspace to output right
+
+bindsym $mod+Shift+Left		move left
+bindsym $mod+Shift+Down		move down
+bindsym $mod+Shift+Up		move up
+bindsym $mod+Shift+Right 	move right
+
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Shift+l		move right 30
+
+bindsym $mod+Left			focus left
+bindsym $mod+Down			focus down
+bindsym $mod+Up				focus up
+bindsym $mod+Right 			focus right
+
+bindsym $mod+space			focus mode_toggle
+
+bindsym $mod+Ctrl+Left		exec --no-startup-id i3resize left
+bindsym $mod+Ctrl+Down		exec --no-startup-id i3resize down
+bindsym $mod+Ctrl+Up		exec --no-startup-id i3resize up
+bindsym $mod+Ctrl+Right		exec --no-startup-id i3resize right
+
+# end of  wm/i3/sxhkdrc
